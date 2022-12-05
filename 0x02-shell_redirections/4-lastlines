@@ -1,2 +1,2 @@
 #!/bin/bash
-cat tail/ect/passwd
+cat tail " ect/passwd"
