@@ -1,2 +1,2 @@
 #!/bin/bash
-printf 'hello user'
+export PS1="hello user"
