@@ -1,2 +1,2 @@
 #!/bin/bash
-export PS1="hello user"
+export PS1="hello user$"
