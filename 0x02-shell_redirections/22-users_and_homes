@@ -1,2 +1,2 @@
 #!/bin/bash
-users ls -l
+sort /etc/passwd| cut -d':' -f 1,6
