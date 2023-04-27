@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-#Prints Best School 10 times, but on the 9th index displays
-#Best School and then Hi on new line
-x = 1
-while [$x - le 10]
+#prints "Best School" 10 times, but on the  9th iteration,
+#prints Best School then Hi on new line
+x=1
+while [ $x -le 10 ]
 do
 	echo "Best School"
-	if [$x -ep 9]; then
+	if [ $x -eq 9 ]; then
 	   echo "Hi"
 	fi
-	x = $((x + 1))
+	x=$((x+1))
 done

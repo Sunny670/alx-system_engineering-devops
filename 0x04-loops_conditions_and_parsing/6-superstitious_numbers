@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Script that prints numbers from 1 to 20 and:
+#prints 4 and then bad luck from China on the 4th loop iteration
+#prints 9 and then bad luck from Japan on the 9th loop iteration
+#prints 17 and then bad luck from Italy on the 17th loop iteration
+y=1
+while [ $y -le 20 ]
+do
+	echo $y
+	case $y in
+	     4) echo "bad luck from China"
+	     	;;
+	     9) echo "bad luck from Japan"
+	        ;;
+	     17) echo "bad luck from Italy"
+	        ;;
+        esac
+	y=$((y+1))
+done

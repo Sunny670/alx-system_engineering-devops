@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-#Script that loops from 1 to 10 and:
-#prints bad luck on the 4th loop of  iteration
-#prints good luck on the 8th loop of iteration
-#prints Best School for the rest of iterations
-x = 1
-while [$x -le 10 ]
+#Write a Bash script that loops from 1 to 10 and:
+#prints bad luck on the 4th loop iteration
+#prints good luck on the 8th loop iteration
+#prints Best School for the rest iterations
+x=1
+while [ $x -le 10 ]
 do
-	if [$x -eq 4]; then
-		echo "bad luck"
-	elif [$x -eq 8]; then
-		echo "good luck"
+	if [ $x -eq 4 ]; then
+	   echo "bad luck"
+	elif [ $x -eq 8 ]; then
+	   echo "good luck"
 	else
-		echo "Best School"
+	   echo "Best School"
 	fi
-	x = $((x + 1))
+	x=$((x+1))
 done

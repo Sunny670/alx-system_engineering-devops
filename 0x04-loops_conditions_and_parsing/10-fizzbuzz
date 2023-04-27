@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Displays FizzBuzz when the number is a multiple of 3 and 5 fizz for 3 buzz 5
+for (( x=0; x<10; x++))
+do
+	echo "Best School"
+done

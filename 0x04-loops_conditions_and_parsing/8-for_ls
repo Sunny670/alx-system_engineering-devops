@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Prints:
+#  Contents of current directory
+#  In list format
+#  And only the part of  name after the first dash is shown
+
+for a in *; do
+    echo "$a" | cut -d '-' -a 2
+
+done
