@@ -12,6 +12,6 @@ while [ $x -le 12 ]; do
 		echo $y
 		y=$((y+1))
 	done
-	j=$((1))
+	y=$((1))
 	x=$((x+1))
 done
