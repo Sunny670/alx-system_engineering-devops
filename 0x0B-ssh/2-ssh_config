@@ -1,3 +1,9 @@
-Host 34.202.164.16
-	IdentityFile ~/.ssh/school
-PasswordAuthentication no
+#  Client configuration file
+
+Host *
+    PasswordAuthentication no
+    IdentifyFile ~/.ssh/school
+    SendEnv LANG LC_*
+    HashKnownHost yes
+    GSSAPIAuthentication yes
+    User ubuntu
