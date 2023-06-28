@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
-# commands to install nginx on web sever
+# installs nginx and configure it to listen on port 80
+# print "Hello World"
 
-sudo apt-get update
-sudo apt-get -y install nginx
-sudo ufw allow 'Nginx HTTP'
-
-echo "Hello World!" > /var/www/html/index.html
-
-#testing nginx configurations
-
-sudo nginx -t
-sudo service nginx start
-
-
+apt-get -y update
+apt-get -y install nginx
+ufw allow "NGINX HTTP"
+echo 'Hello World!' > /var/www/html/index.html
+sudo service nginx restart
