@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script connects to my server via ssh
+ssh ubuntu@54.175.144.21 -i ~/.ssh/school
