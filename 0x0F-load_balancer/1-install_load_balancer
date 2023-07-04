@@ -1,37 +1,26 @@
-#/usr/bin/env bash
-# This script install and configure HAproxy
-sudo apt-get update -y
-sudo apt-get install -y haproxy
-sudo mv /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
-sudo touch /etc/haproxy/haproxy.cfg
-sudo chmod 666 /etc/haproxy/haproxy.cfg
+#!/usr/bin/env bash
+# Configure HAProxy to send traffic to web-01 and web-02 servers
+# Distribute requests using a roundrobin algorithm
 
-echo "global
-		log /dev/log	local0
-		log /dev/log	local1 notice
-		chroot /var/lib/haproxy
-		stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
-		stats timeout 30s
-		user haproxy
-		group haproxy
-		daemon
-		
-defaults
-		log		global
-		mode	http
-		option	httplog
-		option	dontlognull
-		timeout	connect 5000
-		timeout	client 	50000
-		timeout	server	50000
+sudo apt-get -y update
+apt-get -y install haproxy
 
-frontend http-in
-		bind *:80
-		default_backend servers
+# Configuration of HAproxy
+server_config=\
+"
+frontend  sunny-frontend
+        bind *:80
+        mode http
+        default_backend sunny-backend
+backend sunny-backend
+        balance roundrobin
+        server	194764-web-01 54.175.144.21 check
+	server	194764-web-02 18.204.10.91 check
+"
+echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
-backend servers
-		balance	roundrobin
-		server	194764-web-01 54.175.144.21 check
-		server	194764-web-02 18.204.10.91 check" | sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null
+# enable haproxy to be started by init script
+
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 
 sudo service haproxy restart
