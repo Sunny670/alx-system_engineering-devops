@@ -41,7 +41,7 @@ frontend sunny_web_frontend
 
 
 frontend sunny_web_frontend-https
-    bind *:443 ssl crt /etc/haproxy/certs/www.obony.tech.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.obonysunny670.tech.pem
     http-request set-header X-Forwarded-Proto https
     default_backend sunny_web_backend
 
