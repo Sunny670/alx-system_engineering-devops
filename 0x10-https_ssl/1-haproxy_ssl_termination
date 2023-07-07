@@ -33,17 +33,6 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-<<<<<<< HEAD
-frontend web_frontend
-        bind *:80
-        default_backend web_backend
-	http-request set-header X-Forwarded-Proto http
-	default_backend sunny_web_backend
-
-frontend web_frontend_secure
-        bind *:443 ssl crt /etc/haproxy/ssl/www.sunny670.tech.pem
-        default_backend sunny_web_backend
-=======
 frontend sunny_web_frontend
     bind *:80
     mode http
@@ -51,10 +40,9 @@ frontend sunny_web_frontend
     default_backend sunny_web_backend
 
 frontend web_frontend_secure-https
-    bind *:443 ssl crt /etc/letsencrypt/live/www.sunny670.tech/privkey.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.sunny670.tech.pem
     http-request set-header X-Forwarded-Proto https
     default_backend web_backend
->>>>>>> 512a585c19fd89a50e4d0db3ad9350b3192e7e47
 
 backend sunny_web_backend
     balance roundrobin
