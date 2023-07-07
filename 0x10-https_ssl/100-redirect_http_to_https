@@ -25,6 +25,32 @@ defaults
         timeout connect 5000
         timeout client  50000
         timeout server  50000
+<<<<<<< HEAD
+	errorfile 400 /etc/haproxy/errors/400.http
+	errorfile 403 /etc/haproxy/errors/403.http
+	errorfile 408 /etc/haproxy/errors/408.http
+	errorfile 500 /etc/haproxy/errors/500.http
+	errorfile 502 /etc/haproxy/errors/502.http
+	errorfile 503 /etc/haproxy/errors/503.http
+	errorfile 504 /etc/haproxy/errors/504.http
+
+frontend web_frontend
+        bind *:80
+        mode http
+	redirect
+	http-request set-header Host %[hdr(host)]
+        redirect scheme https code 301 unless { ssl_fc }
+        default_backend sunny_web_backend
+
+frontend web_frontend_secure
+        bind *:443 ssl crt /etc/haproxy/ssl/www.sunny670.tech.pem
+        default_backend sunny_web_backend
+
+backend web_backend
+        balance roundrobin
+	server web-01 54.175.144.21:80 check
+        server web-02 18.204.10.91:80 check
+=======
         errorfile 400 /etc/haproxy/errors/400.http
         errorfile 403 /etc/haproxy/errors/403.http
         errorfile 408 /etc/haproxy/errors/408.http
@@ -52,3 +78,4 @@ backend sunny_web_backend
     balance roundrobin
 		server web-01 54.175.144.21:80 check
         server web-02 18.204.10.91:80 check
+>>>>>>> 512a585c19fd89a50e4d0db3ad9350b3192e7e47
