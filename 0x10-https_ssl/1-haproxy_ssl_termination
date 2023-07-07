@@ -39,10 +39,13 @@ frontend sunny_web_frontend
     http-request set-header X-Forwarded-Proto http
     default_backend sunny_web_backend
 
-frontend web_frontend_secure
-    bind *:443
+
+frontend sunny_web_frontend-https
+    bind *:443 ssl crt /etc/haproxy/certs/www.obony.tech.pem
     http-request set-header X-Forwarded-Proto https
-    default_backend web_backend
+    default_backend sunny_web_backend
+
+
 backend sunny_web_backend
     balance roundrobin
     server 194764-web-01 54.175.144.21:80 check
