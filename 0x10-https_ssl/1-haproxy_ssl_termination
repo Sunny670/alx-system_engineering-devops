@@ -36,10 +36,12 @@ defaults
 frontend web_frontend
         bind *:80
         default_backend web_backend
+	http-request set-header X-Forwarded-Proto http
+	default_backend sunny_web_backend
 
 frontend web_frontend_secure
         bind *:443 ssl crt /etc/haproxy/ssl/www.sunny670.tech.pem
-        default_backend web_backend
+        default_backend sunny_web_backend
 
 backend web_backend
         balance roundrobin
