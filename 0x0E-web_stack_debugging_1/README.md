@@ -1,2 +1,3 @@
 # `Web stack debugging 1`
-![](https://cdn.educba.com/academy/wp-content/uploads/2019/09/What-is-Debugging.png)
+
+![download](https://github.com/Sunny670/alx-system_engineering-devops/assets/117737085/21ce2567-7833-4a7f-adea-5079c0416cf6)
