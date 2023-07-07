@@ -35,15 +35,17 @@ defaults
 
 frontend web_frontend
         bind *:80
-        http-request set-header Host %[hdr(host)]
-        redirect scheme https code 301 if !{ ssl_fc }
-        default_backend web_backend
+        mode http
+	redirect
+	http-request set-header Host %[hdr(host)]
+        redirect scheme https code 301 unless { ssl_fc }
+        default_backend sunny_web_backend
 
 frontend web_frontend_secure
         bind *:443 ssl crt /etc/haproxy/ssl/www.sunny670.tech.pem
-        default_backend web_backend
+        default_backend sunny_web_backend
 
 backend web_backend
         balance roundrobin
-		server web-01 54.175.144.21:80 check
+	server web-01 54.175.144.21:80 check
         server web-02 18.204.10.91:80 check
