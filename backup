@@ -1,0 +1,690 @@
+    1  cd ~
+    2  cd .ssh
+    3  ls
+    4  vi authorized_keys 
+    5  exit
+    6  ls
+    7  ls -al
+    8  cd .ssh
+    9  ls
+   10  vi authorized_keys 
+   11  cd ..
+   12  ls
+   13  exit
+   14  ls
+   15  exit
+   16  ls /etc/nginx
+   17  vi /etc/nginx/nginx.conf 
+   18  exit
+   19  ls
+   20  exit
+   21  sudo apt-get update
+   22  clear
+   23  sudo service nginx status
+   24  ls
+   25  exit
+   26  curl localhost
+   27  clear
+   28  apt list
+   29  apt list | grep nginx
+   30  clear
+   31  sudo apt install -y nginx
+   32  ls
+   33  clear
+   34  curl localhost
+   35  ls
+   36  exit
+   37  clear
+   38  ls
+   39  cd /var
+   40  ls
+   41  cd www
+   42  ls
+   43  cd html/
+   44  ls
+   45  echo "Hello World!" | sudo tee /var/www/html//index.html
+   46  ls
+   47  sudo nginx -t
+   48  sudo service nginx restart
+   49  sudo service nginx reload
+   50  exit
+   51  vi  /etc/passwd
+   52  clear
+   53  ps auxf | grep nginx
+   54  clear
+   55  ls -la
+   56  cd .ssh
+   57  ls
+   58  vi authorized_keys 
+   59  lsm-la
+   60  clear
+   61  ls -la
+   62  cd~
+   63  cd ~
+   64  ls
+   65  exit
+   66  ls
+   67  exit
+   68  cleaar
+   69  sudo apt update
+   70  sudo apt-get update
+   71  clear
+   72  ls
+   73  start nginx
+   74  nginx
+   75  services nginx 
+   76  clear
+   77  exit
+   78  clear
+   79  sudo nginx -t
+   80  ls
+   81  ./0-transfer_file 
+   82  ./1-install_nginx_web_server 
+   83  ./3-redirection 
+   84  ./4-not_found_page_404 
+   85  ls
+   86  clear
+   87  exit
+   88  clear
+   89  dig myschool.tech
+   90  curl -sI 34.198.248.145/redirect_me/
+   91  curl -sI 54.175.144.21/redirect_me/
+   92  curl -sI 54.175.144.21/xyz
+   93  exit
+   94  clear
+   95  ls
+   96  clear
+   97  ./1-install_nginx_web_server > /dev/null 2>&1
+   98  curl localhost
+   99  curl 54.175.144.21
+  100  curl -sI 
+  101  curl -sI 54.175.144.21
+  102  clear
+  103  ls
+  104  ./4-not_found_page_404 
+  105  ls
+  106  ./3-redirection 
+  107  sudo systemctl restart nginx
+  108  sudo service restart nginx 
+  109  sudo /etc/init.d/nginx restart 
+  110  service nginx configtest  
+  111  ls
+  112  exit
+  113  ls
+  114  rm 0-transfer_file  1-install_nginx_web_server  2-setup_a_domain_name  3-redirection  4-not_found_page_404 7-puppet_install_nginx_web_server.pp README.md 
+  115  ls
+  116  git clone "https://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@github.com/Sunny670/alx-system_engineering-devops"
+  117  git config --global user.email sunny.thanki13@gmail.com
+  118  git config --global user.name Sunny670
+  119  cd alx-system_engineering-devops/
+  120  git config --global user.name Sunny670
+  121  git config --global user.email sunny.thanki13@gmail.com
+  122  git config --global user.name Sunny670
+  123  ls
+  124  cd 0x0F-load_balancer/
+  125  clear
+  126  ls
+  127  chmod +x 0-custom_http_response_header  1-install_load_balancer  2-puppet_custom_http_response_header.pp 
+  128  ls
+  129  ./0-custom_http_response_header 
+  130  curl localhost
+  131  cd ..
+  132  ls
+  133  cd 0x0C-web_server/
+  134  ls
+  135  ./1-install_nginx_web_server 
+  136  curl localhost
+  137  cd ..
+  138  cd 0x0F-load_balancer/
+  139  git add .
+  140  git commit -m 'updates'
+  141  git push
+  142  git pull
+  143  ls
+  144  clear
+  145  ls
+  146  vi 0-custom_http_response_header 
+  147  ./1-install_load_balancer 
+  148  ./0-custom_http_response_header 
+  149  sudo apt unsistall -y haproxy
+  150  clear
+  151  logout
+  152  clear
+  153  purge load balancer
+  154  ls
+  155  sudo apt-get remove haproxy -y
+  156  logout
+  157  clear
+  158  ls
+  159  cd alx-system_engineering-devops/
+  160  ls
+  161  cd 0x0F-load_balancer/
+  162  ls
+  163  git pull
+  164  clear
+  165  ls
+  166  ./0-custom_http_response_header 
+  167  log out
+  168  logout
+  169  clear
+  170  cd .ssh
+  171  ls
+  172  vi authorized_keys 
+  173  cd ~/alx-system_engineering-devops/
+  174  git pull
+  175  ls
+  176  cd 0x0F-load_balancer/
+  177  ls
+  178  vi 0-custom_http_response_header 
+  179  sudo git pull
+  180  git push
+  181  git pull
+  182  vi 0-custom_http_response_header 
+  183  git add .
+  184  git commit -m 'updates'
+  185  git push
+  186  git pull
+  187  git push
+  188  vi 0-custom_http_response_header 
+  189  logout
+  190  git pull
+  191  ls
+  192  cd alx-system_engineering-devops/
+  193  git pull
+  194  cd 0x0F-load_balancer/
+  195  ./0-custom_http_response_header 
+  196  logout
+  197  clear
+  198  curl -si sunny670.tech
+  199  logot
+  200  logout
+  201  ls
+  202  cd alx-system_engineering-devops/
+  203  git pull
+  204  logout
+  205  cd alx-system_engineering-devops/
+  206  ls
+  207  cd 0x0E-web_stack_debugging_1/
+  208  ls
+  209  logout
+  210  cd alx-system_engineering-devops/
+  211  git pull
+  212  logout
+  213  cd alx-system_engineering-devops/
+  214  git pull
+  215  cd 0x0F-load_balancer/
+  216  ls
+  217  vi 1-install_load_balancer 
+  218  logout 
+  219  clear
+  220  git clone "https://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@github.com/Sunny670/AirBnB_clone_v2"
+  221  git config --global user.email sunny.thanki13@gmail.com
+  222  git config --global user.name Sunny670
+  223  cd AirBnB_clone_v2/
+  224  git config --global user.email sunny.thanki13@gmail.com
+  225  git config --global user.name Sunny670
+  226  ls
+  227  chmod u+x 101-setup_web_static.pp 
+  228  git add .
+  229  git commit -m 'updated'
+  230  git push
+  231  clear
+  232  logout
+  233  ls
+  234  cd AirBnB_clone_v2/
+  235  ls
+  236  git pull
+  237  ls
+  238  ls -al
+  239  clear
+  240  logout
+  241  ls
+  242  ls -al
+  243  cd AirBnB_clone_v2/
+  244  ls
+  245  logout
+  246  clear
+  247  puppet apply 101-setup_web_static.pp
+  248  sudo apt install puppet
+  249  puppet apply 101-setup_web_static.pp
+  250  cd AirBnB_clone_v2/
+  251  ls
+  252  puppet apply 101-setup_web_static.pp
+  253  logout
+  254  cd alx-system_engineering-devops/
+  255  git pull
+  256  logout
+  257  clear
+  258  cd /etc/haproxy/
+  259  ls
+  260  vim haproxy.cfg.bak 
+  261  vim haproxy.cfg
+  262  logout
+  263  clear
+  264  cd alx-system_engineering-devops/0x10-https_ssl/
+  265  git pull
+  266  logout
+  267  cd alx-system_engineering-devops/0x10-https_ssl/
+  268  git pull
+  269  logout
+  270  clear
+  271  cd alx-system_engineering-devops/
+  272  git pull
+  273  cd 0x0E-web_stack_debugging_1/
+  274  ls
+  275  cat 0-nginx_likes_port_80 
+  276  curl 0:80
+  277  cat README.md 
+  278  vi RE
+  279  vi README.md 
+  280  git add .
+  281  git commit -m 'pic'
+  282  git push
+  283  git pull
+  284  ls
+  285  clear
+  286  cat 0-nginx_likes_port_80 
+  287  ls
+  288  chmod u+x 0-nginx_likes_port_80  1-debugging_made_short 
+  289  ls
+  290  git add .
+  291  git commit -m 'debugged'
+  292  git push
+  293  logout
+  294  ls
+  295  logout
+  296  ls
+  297  clear
+  298  ls
+  299  sudo ufw status
+  300  service nginx status
+  301  clear
+  302  sudo ufw status
+  303  sudo ufw default deny incoming
+  304  sudo ufw default allow outgoing
+  305  sudo ufw allow 22/tcp
+  306  sudo ufw allow 80/tcp
+  307  sudo ufw allow 443/tcp
+  308  sudo ufw enable
+  309  sudo ufw status
+  310  ls /etc/ufw
+  311  ll /etc/ufw
+  312  sudo vi /etc/ufw/before.rules 
+  313  ls /etc/default/
+  314  ls /etc | grep sysctl
+  315  sudo vi /etc/sysctl.conf 
+  316  sudo sysctl -p 
+  317  logout
+  318  clear
+  319  sudo ufw status
+  320  logout
+  321  sudo vi /etc/nginx/sites-enabled/default
+  322  logout
+  323  clear
+  324  sudo vi /etc/nginx/sites-enabled/default
+  325  clear
+  326  ls
+  327  sudo /etc/ufw 
+  328  sudo vi /etc/ufw/before.rules 
+  329  sudo vi /etc/sysctl.conf 
+  330  sudo sysctl -p
+  331  sudo ufw status
+  332  sudo vi /etc/nginx/sites-available/default
+  333  netstat -lpn
+  334  sudo apt install net-tools
+  335  netstat -lpn
+  336  sudo netstat -lpn
+  337  grep listen /etc/nginx/sites-enabled/default
+  338  logout
+  339  service nginx status
+  340  clear
+  341  sudo vi /etc/nginx/sites-enabled/default
+  342  sudo vi /etc/ufw/before.rules
+  343  cd vi /etc/sysctl.conf
+  344  sudo vi /etc/sysctl.conf
+  345  sudo sysctl -p
+  346  sudo netstat -lpn
+  347  sudo ufw show added
+  348  logout
+  349  clear
+  350  grep listen /etc/nginx/sites-enabled/default
+  351  sudo vi /etc/nginx/sites-available/default
+  352  sudo vi /etc/nginx/sites-enabled/default
+  353  sudo vi /etc/ufw/before.rules 
+  354  sudo vi /etc/sysctl.conf 
+  355  sudo ufw status
+  356  sudo sysctl -p
+  357  logout
+  358  sudo vi /etc/ufw/before.rules 
+  359  logout
+  360  sudo ufw status
+  361  cd alx-system_engineering-devops/
+  362  git pull
+  363  cd 0x13-firewall/
+  364  ls
+  365  vi 100-port_forwarding 
+  366  chmod u+x 0-block_all_incoming_traffic_but  100-port_forwarding 
+  367  ks
+  368  ls
+  369  git add .
+  370  git commit -m 'executable rights'
+  371  git push
+  372  cd ~
+  373  ls
+  374  clear
+  375  sudo ufw status
+  376  grep listen /etc/nginx/sites-enabled/default
+  377  netstat -lpn
+  378  clear
+  379  sudo iptables -t nat -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+  380  logout
+  381  sudo vi /etc/sysctl.conf 
+  382  clear
+  383  apt list | grep mysql-server
+  384  clear
+  385  mysql -uroot -p1236
+  386  mysql -uroot -p
+  387  history
+  388  clear
+  389  vi create_grant_prv.sql
+  390  cat create_grant_prv.sql  | mysql -uroot -p
+  391  mysql -u root -p
+  392  ls
+  393  mysql -u root -p
+  394  ls
+  395  logout
+  396  cd alx-system_engineering-devops/
+  397  ls
+  398  cd 0x13-firewall/
+  399  ls
+  400  git status
+  401  logout
+  402  sudo apt updatte
+  403  sudo apt update
+  404  apt list  | grep mysql-server
+  405  clear
+  406  vi mysql_v5.7.key
+  407  ls
+  408  sudo apt-key add mysql_v5.7.key 
+  409  mysql --version
+  410  sudo mysql --version
+  411  mysql --version
+  412  clear
+  413  sudo apt update
+  414  sudo sh -c 'echo "deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7" >> /etc/apt/sources.list.d/mysql.list'
+  415  sudo apt update
+  416  sudo apt-cache policy mysql-server
+  417  sudo apt-get install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7* -y
+  418  clear
+  419  sudo server mysql status
+  420  sudo service mysql status
+  421  clear
+  422  ls
+  423  vi create_grant_prv.sql 
+  424  vi mysql_v5.7.key 
+  425  logout
+  426  ls
+  427  mysql -u root -p
+  428  sudo service nginx
+  429  sudo service nginx status
+  430  logout
+  431  cd alx-system_engineering-devops/0x12-web_stack_debugging_2/
+  432  ls
+  433  chmod u+x 0-iamsomeoneelse 1-run_nginx_as_nginx 100-fix_in_7_lines_or_less 
+  434  ls
+  435  git add .
+  436  git commit -m 'executable rights given'
+  437  git push
+  438  git pull
+  439  git push
+  440  ls
+  441  clear
+  442  mysql -uroot -p
+  443  mysql --version
+  444  mysql -uholberton_user -p -e "SHOW GRANTS FOR 'holberton_user'@'localhost'"
+  445  ls -al
+  446  clear
+  447  ls
+  448  mysql -uholberton_user -p -e 'SELECT user, Repl_slave_priv FROM mysql.user'
+  449  clear
+  450  msql -uroot -p
+  451  mysql -uroot -p
+  452  clear
+  453  mysql -uholberton_user -p -e 'SELECT user, Repl_slave_priv FROM mysql.user'
+  454  mysql -uroot -p
+  455  clear
+  456  sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+  457  sudo service mysql restart
+  458  mysql -uroot -p
+  459  clear
+  460  ssh-keygen -f ~/.ssh/sql_server_key
+  461  cd .ssh
+  462  ls
+  463  vi sql_server_key.pub 
+  464  clear
+  465  mysqldump -uroot -p holberton_user > holberton_user.sql
+  466  ls
+  467  rm holberton_user.sql 
+  468  cd ~
+  469  mysqldump -uroot -p holberton_user > holberton_user.sql
+  470  ls
+  471  clear
+  472  ls
+  473  scp -i ~/.ssh/sql_server_key holberton_user.sql ubuntu@18.204.10.91:~
+  474  clear
+  475  ls
+  476  mysql -uroot -p
+  477  mysqldump -uroot -p tyrell_corp > tyrell.sql
+  478  ls
+  479  clear
+  480  history
+  481  clear
+  482  ls
+  483  scp -i ~/.ssh/sql_server_key  tyrell.sql  ubuntu@18.204.10.91:~
+  484  rm -f holberton_user.sql 
+  485  ls
+  486  clear
+  487  mysql -uholberton_user -p -e "use tyrell_corp; select * from nexus6"
+  488  sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+  489  sudo service mysql restart
+  490  clear
+  491  cd /.ssh
+  492  cd ~/.ssh
+  493  ls
+  494  vi authorized_keys 
+  495  logout
+  496  clear
+  497  mysql -u root -p
+  498  CLEAR
+  499  clear
+  500  ls
+  501  vi create_grant_prv.sql 
+  502  cat create_grant_prv.sql  | grep mysql -uroot -p
+  503  grep --help 
+  504  cat create_grant_prv.sql  |  mysql -uroot -p
+  505  mysql -uroot -p 
+  506  logout
+  507  clear
+  508  logout
+  509  mysql -uroot -p 
+  510  sudo systemctl restart mysql
+  511  mysql -uroot -p 
+  512  logut
+  513  logout
+  514  history
+  515  clear
+  516  GRANT REPLICATION SLAVE ON *.* TO 'replica_user'@'18.204.10.91';
+  517  mysql -uroot -p 
+  518  exit
+  519  clear
+  520  mysql -uroot -p
+  521  clear
+  522  sudo mysqldump -u root tyrell_corp > tyrell_corp.sql
+  523  sudo mysqldump -u root -p tyrell_corp > tyrell_corp.sql
+  524  ls
+  525  clear
+  526  mysql -uroot -p
+  527  ls
+  528  scp tyrell_corp.sql ubuntu@18.204.10.91:/tmp/
+  529  scp -i _idenetity_file_ export_db_name.sql user@machine_ip:location
+  530  clear
+  531  ls
+  532  vi tyrell_corp.sql
+  533  clea
+  534  sudo ufw status
+  535  mysql -uroot -p 
+  536  logout
+  537  clear
+  538  ls
+  539  cd alx-system_engineering-devops/
+  540  gitpull
+  541  git pull
+  542  cd 0x14-mysql/
+  543  ls
+  544  chmod u+x 5-mysql_backup 
+  545  ls
+  546  ./5-mysql_backup 
+  547  vi 5-mysql_backup 
+  548  cp 5-mysql_backup  /~
+  549  cp 5-mysql_backup  / ~
+  550  cp 5-mysql_backup  ~
+  551  ls
+  552  cd ..
+  553  ls
+  554  cd ~
+  555  clear
+  556  ls
+  557  ./5-mysql_backup mydummypassword
+  558  vi 5-mysql_backup 
+  559  ./5-mysql_backup mydummypassword
+  560  backup.sql./5-mysql_backup mydummypassword
+  561  backup.sqlls
+  562  clear
+  563  ls
+  564  vi backup.sql 
+  565  cd alx-system_engineering-devops/
+  566  cd 0x14-mysql/
+  567  ls
+  568  git add .
+  569  git commit -m 'MySQL'
+  570  git push
+  571  cd ~
+  572  cd ..
+  573  logout
+  574  ls
+  575  clear
+  576  DD_API_KEY=d14bd7c40d5042d40736432a0489e986
+  577  DD_SITE="datadoghq.com"
+  578  DD_APM_INSTRUMENTATION_ENABLED=host bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)" 
+  579  DD_API_KEY=d14bd7c40d5042d40736432a0489e986 DD_SITE="datadoghq.com" DD_APM_INSTRUMENTATION_ENABLED=host bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
+  580  sudo systemctl start datadog-agent
+  581  ls
+  582  logout
+  583  history
+  584  clear
+  585  ls
+  586  cd alx-system_engineering-devops/
+  587  ls
+  588  git pull
+  589  cls
+  590  ls'
+  591  ls
+  592  cd ..
+  593  ls
+  594  clear
+  595  ls
+  596  source alx/bin/activate
+  597  ls
+  598  cd AirBnB_clone_v2/
+  599  ls
+  600  vi 1-pack_web_static.py 
+  601  claer
+  602  clear
+  603  ls
+  604  pip install flask
+  605  ls
+  606  curl 127.0.0.1:5000/airbnb-onepage/
+  607  cd ..
+  608  deactivate
+  609  pip install flask
+  610  clear
+  611  source alx/bin/activate
+  612  cd AirBnB_clone_v2/
+  613  ls
+  614  cd web_flask/
+  615  ls
+  616  cd templates/
+  617  ls
+  618  cd ..
+  619  ls
+  620  chmod *.py
+  621  chmod +x *.py
+  622  ls
+  623  vi 0-hello_route.py 
+  624  ls
+  625  cat 0-hello_route.py 
+  626  sudo lsof -i :5000
+  627  sudo kill 264813
+  628  sudo lsof -i :5000
+  629  python 0-hello_route.py 
+  630  deactivate
+  631  ls
+  632  git add .
+  633  git commit -m 'updates'
+  634  git push
+  635  logout
+  636  ls
+  637  cd alx-system_engineering-devops/0x1A-application_server/
+  638  ls
+  639  cd .
+  640  ls
+  641  cd ..
+  642  ls
+  643  cat 2-app_server-nginx_config 
+  644  claer
+  645  gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
+  646  cd AirBnB_clone_v2/
+  647  gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
+  648  sudo lsof -i :5000
+  649  sudo kill 1551
+  650  gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
+  651  clear
+  652  curl 127.0.0.1/airbnb-onepage/
+  653  ls
+  654  cd ..
+  655  cd alx-system_engineering-devops/0x1A-application_server/
+  656  vi 3-app_server-nginx_config 
+  657  clear
+  658  cd ~
+  659  ls
+  660  sudo vi /etc/nginx/sites-available/
+  661  sudo vi /etc/nginx/sites-available/airbnb-onepage 
+  662  sudo vi /etc/nginx/sites-enabled/airbnb-onepage 
+  663  cd alx-system_engineering-devops/
+  664  ls
+  665  cd 0x1A-application_server
+  666  ls
+  667  git add .
+  668  git commit -m 'updates'
+  669  git push
+  670  git pull
+  671  git push
+  672  cd ~
+  673  cd AirBnB_clone_v2/
+  674  gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app
+  675  tmux new-session -d 'gunicorn --bind 0.0.0.0:5000 web_flask.0-hello_route:app'
+  676  pgrep gunicorn
+  677  tmux new-session -d 'gunicorn --bind 0.0.0.0:5001 web_flask.6-number_odd_or_even:app'
+  678  pgrep gunicorn
+  679  sudo service nginx restart
+  680  sudo reboot
+  681  sudo nginx -t
+  682  sudo vi /etc/nginx/sites-available/airbnb-onepage 
+  683  sudo vi /etc/nginx/sites-enabled/airbnb-onepage 
+  684  sudo lsof -i
+  685  sudo lsof -i :5000
+  686  sudo kill 1557
+  687  clear
+  688  histroy
+  689  history
+  690  history > backup
